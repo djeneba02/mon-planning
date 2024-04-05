@@ -26,12 +26,12 @@ body{
     border: 2xp solide rgb(255, 255, 255, .2);
     backdrop-filter: 0 0 10xp rgba(0, 0, 0, .2);
     color: #fff;
-    border-radius: 10xp;
+    
     
     background-color: rgb(78, 58, 110);
 }
 h1{
-    font-size: 70px;
+    font-size: 60px;
     font-family:'Times New Roman';
     text-align: center left;
     position: relative;
@@ -42,8 +42,4 @@ h1{
     background-color: blueviolet;
     color: aliceblue;
     border-radius: 20%;
-}
-.ulliste{
-    
-
 }

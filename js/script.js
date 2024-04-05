@@ -171,6 +171,11 @@ $(document).ready(function(){
                         <option value="medium">Moyenne</option>
                         <option value="low">Basse</option>
                     </select>
+                    <select class="status">
+                <option value="comp">complet</option>
+                <option value="incomp">incomplet</option>
+                
+            </select>
                 `);
                 addList.append(listLi);
             });
