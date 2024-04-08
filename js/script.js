@@ -89,6 +89,7 @@
 
    
 // });
+// une foi la page chargée declation de variable 
 $(document).ready(function(){
     var add = $("#add");
     var dateList = $("#dateList");
@@ -114,8 +115,8 @@ $(document).ready(function(){
                     <option value="low">Basse</option>
                 </select>
                 <select class="status">
-                <option value="comp">complet</option>
-                <option value="incomp">incomplet</option>
+                <option value="comp">complete</option>
+                <option value="incomp">incomplete</option>
                 
             </select>
             `);
