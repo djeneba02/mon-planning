@@ -27,68 +27,7 @@
 //    });
 // });
 
-// $(document).ready(function(){
-//     const add = document.getElementById("add");
-// const dateList = document.getElementById("dateList");
-// const addList = document.getElementById("addList");
-// const addBtn = document.getElementById("addBtn");
-//     $('Add').change(function(){
-//         var Add = $(this).val();
-//         $('ul').appened('<li>'+ Add +'</li>');
-//         $(this).val('')
-//     });
 
-
-// });
-// $(document).ready(function(){
-//     var add = $("#add");
-//     var dateList = $("#dateList");
-//     var addList = $("#addList");
-//     var addBtn = $("#addBtn");
-//     var taskCounter = $("#plannings-Tache span"); // Sélectionne le span contenant le nombre de tâches
-//    //   updateTaskCounter();
-//     addBtn.on("click", function(){
-//         var contentAdd = add.val().trim();
-//         var contentDate = dateList.val().trim();
-//         var selectedPriority = $(this).siblings(".priority").val(); // Récupère la priorité sélectionnée
-//         if (contentAdd !== "") {
-//             var listLi = $("<li>").addClass("task").html(`
-//                 <span> ${contentAdd} </span>
-//                 <span> ${contentDate} </span>
-            
-//                 <button class="deleteBtn"> supprimer</button>
-//                 <select class="priority">
-//                     <option value="high">Haute</option>
-//                     <option value="medium">Moyenne</option>
-//                     <option value="low">Basse</option>
-//                 </select>
-//             `);
-//              addList.append(listLi);
-//             add.val("");
-//             dateList.val("");
-//              // Met à jour le nombre de tâches
-//              var currentTasks = parseInt(taskCounter.text());
-//              taskCounter.text(currentTasks + 1);
-//         }
-//     });
-
-//     addList.on("click", ".deleteBtn", function(){
-//         $(this).parent().remove();
-//         // Met à jour le nombre de tâches après la suppression
-//         var currentTasks = parseInt(taskCounter.text());
-//         taskCounter.text(currentTasks - 1);
-       
-
-      
-//     });
-//     // Fonction pour mettre à jour le nombre de tâches
-//     function updateTaskCounter() {
-//         var currentTasks = addList.find('li.task').length;
-//         taskCounter.text(currentTasks);
-//     }
-
-   
-// });
 // une foi la page chargée declation de variable 
 $(document).ready(function(){
     var add = $("#add");
@@ -99,11 +38,12 @@ $(document).ready(function(){
 
     // Charger les tâches depuis le stockage local au chargement de la page
     loadTasksFromLocalStorage();
-
+    // après le click
     addBtn.on("click", function(){
         var contentAdd = add.val().trim();
         var contentDate = dateList.val().trim();
         var selectedPriority = $(this).siblings(".priority").val(); // Récupère la priorité sélectionnée
+        // condition pour recupére les donners dans la liste
         if (contentAdd !== "") {
             var listLi = $("<li>").addClass("task").html(`
                 <span> ${contentAdd} </span>
