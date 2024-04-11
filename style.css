@@ -57,7 +57,7 @@ body{
     height: 300px;
     /* width: 50%;  */
     padding: 10px;
-    color: var(--back-color-e);
+    color:var(--back-color-e);
     margin: 20px;
 }
 /* sélection de h1 pour stiliser  */
@@ -72,7 +72,7 @@ h1{
 /*  sélection du boutton pour styliser */
 .add-btn{
     background-color:var(--back-color-c);
-    color: var(--back-color-e);
+    color:var(--back-color-e);
     border-radius: 20%;
 }
 .phrase{
@@ -84,7 +84,7 @@ h1{
 }
 a{
     background-color:var(--back-color-c);
-    color: var(--back-color-e);
+    color:var(--back-color-e);
     border-radius: 20%; 
 }
 
