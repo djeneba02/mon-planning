@@ -16,29 +16,49 @@
 }
 /* sélection du corps en donnant quelque style  */
 body{
-    width: 220;
-    height: 180;
-    min-width: 100vh;
+    width: 100%;
+    /* height: 180; */
+    /* min-width: 100vh; */
     margin: auto;
     position: relative;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     background:var(--back-color-a);
    
 }
 /* sélection du conteneur en donnant quelque style egalement */
-.conteneur{
-    padding: auto;
-    margin: 70px;
-    width: 40%;
-    
+.tout{
     position: relative;
+    width: 100%;
+    display:flex;
+
+    /* grid-template-columns: 2fr 2fr; */
+    flex-flow: row wrap;
+}
+.conteneur{
+    /* position: relative;
+    padding: auto; */
+    height: 300px;
+    
+    /* margin: 70px;*/
+    /* width: 40%;  */
+    padding: 10px;
+    margin: 20px;
+    
     border: 2xp solide rgb(255, 255, 255, .2);
     backdrop-filter: 0 0 10xp rgba(0, 0, 0, .2);
     color: var(--back-color-e);
     
     
     background-color:var(--back-color-b);
+}
+.liste{
+    background-color:var(--back-color-b);
+    height: 300px;
+    /* width: 50%;  */
+    padding: 10px;
+    color: var(--back-color-e);
+    margin: 20px;
 }
 /* sélection de h1 pour stiliser  */
 h1{

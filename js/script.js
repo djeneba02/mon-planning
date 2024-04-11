@@ -35,7 +35,7 @@ $(document).ready(function(){
     var addList = $("#addList");
     var addBtn = $("#addBtn");
     var taskCounter = $("#plannings-Tache span"); // Sélectionne le span contenant le nombre de tâches
-
+  
     // Charger les tâches depuis le stockage local au chargement de la page
     loadTasksFromLocalStorage();
     // après le click
@@ -44,6 +44,8 @@ $(document).ready(function(){
         var contentDate = dateList.val().trim();
         var selectedPriority = $(this).siblings(".priority").val(); // Récupère la priorité sélectionnée
         // condition pour recupére les donners dans la liste
+        
+        
         if (contentAdd !== "") {
             var listLi = $("<li>").addClass("task").html(`
                 <span> ${contentAdd} </span>
@@ -59,6 +61,8 @@ $(document).ready(function(){
                 <option value="incomp">incomplete</option>
                 
             </select>
+            
+            
             `);
             addList.append(listLi);
             add.val("");
@@ -124,4 +128,5 @@ $(document).ready(function(){
             updateTaskCounter();
         }
     }
+    
 });

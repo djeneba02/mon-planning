@@ -11,21 +11,29 @@
     <!-- le titre principale  -->
     <h1>Mon plannings</h1>
     <!-- création d'un grand div de class conteneur -->
-    <div class="conteneur">
+    <div class="tout">
+        <div class="conteneur">
         <!-- les differents entre utilisateur et la boutton  -->
-        <label for="add">Entrer des tâches</label>
-        <input id="add" type="text" placeholder="Insérer" aria-label="Champ de texte pour insérer..."><br><br>
-        <label for="dateList">Date</label>
-        <input class="date1" type="date" id="dateList"><br><br>
-        <button class="add-btn" id="addBtn">Ajouter</button><br>
+            <label for="add">Entrer des tâches</label>
+            <input id="add" type="text" placeholder="Insérer" aria-label="Champ de texte pour insérer..."><br><br>
+            <label for="dateList">Date</label>
+            <input class="date1" type="date" id="dateList"><br><br>
+            <button class="add-btn" id="addBtn">Ajoutger</button><br>
       
-     <br><p id="plannings-Tache">
-    vous avez <span>0</span> Tache (s) a accomplir</p><br>
+         
    <!-- la liste qui prandra les differents entrée utilisateur -->
-    <div class="ulliste"> <ul id="addList"></ul></div>
-    
+    <!-- <div class="ulliste"> <ul id="addList"></ul> -->
         
-    </div>
+        </div>
+    <!-- <button onclick="cacherReste()">Cacher le reste</button> -->
+
+        <div class="liste">
+            <p id="plannings-Tache">
+                vous avez <span>0</span> Tache (s) a accomplir</p><br>
+            <div class="ulliste"> <ul id="addList"></ul>
+        </div>
+</div>
+</div>
     <!-- <a href="file:///C:/Users/djeneba.cissoko/Desktop/mon-planning/test.html">Retour</a>  -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/script.js"></script>
