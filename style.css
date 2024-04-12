@@ -1,8 +1,8 @@
 /* création de varieble */
 :root{
-    --back-color-a:#D8B0D9;
-    --back-color-b:#4E3A6E;
-    --back-color-c:#8A2BE2;
+    --back-color-a:#ffffff;
+    --back-color-b:#965110;
+    --back-color-c:#0c0413;
     --back-color-e:#fff;
 }
 /* sélection de toute la page en donnant quelque style */
@@ -42,38 +42,77 @@ body{
     
     /* margin: 70px;*/
     /* width: 40%;  */
-    padding: 10px;
-    margin: 20px;
-    
+    padding: 6%;
+    margin: 10px 5px;
+    height: 20%;
     border: 2xp solide rgb(255, 255, 255, .2);
     backdrop-filter: 0 0 10xp rgba(0, 0, 0, .2);
     color: var(--back-color-e);
-    
-    
+    position: center left;
+    border-radius: 17% ;
     background-color:var(--back-color-b);
+    /* left: 50px; */
+}
+.form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+input{
+    padding: 10px;
+    margin: 5px;
+    left: 5px;
 }
 .liste{
-    background-color:var(--back-color-b);
+    /* background-color:#f0af73; */
     height: 300px;
     /* width: 50%;  */
     padding: 10px;
     color:var(--back-color-e);
-    margin: 20px;
+    margin: 10px;
+    word-wrap: break-word;
+    
+}
+ul li {
+    list-style: none;
+    border: 1px solid;
+    border-radius: 10%;
+    margin: 10px 20px;
+    background-color:var(--back-color-b);
+    padding-left: 5%;
+    max-width: 300px;
+    overflow-wrap: break-word;
+    
+}
+ul {
+     display: flex;
+     flex-flow: row wrap;
 }
 /* sélection de h1 pour stiliser  */
 h1{
     font-size: 60px;
     font-family:'Times New Roman';
     text-align: center left;
-    position: relative;
-    margin: auto;
-    padding: auto;
+    /* position: relative; */
+    padding: -20px;
+    margin: 20px;
+    
+    
+    
+}
+
+img{
+    width: 30%;
+    height: 30%;
+    left: 10%;
+    
 }
 /*  sélection du boutton pour styliser */
 .add-btn{
     background-color:var(--back-color-c);
     color:var(--back-color-e);
     border-radius: 20%;
+    padding: 5px;
 }
 .phrase{
     display: flex;
@@ -88,3 +127,9 @@ a{
     border-radius: 20%; 
 }
 
+#plannings-Tache{
+
+    background-color:var(--back-color-b);
+    color: var(--back-color-a);
+    text-align: center;
+}
