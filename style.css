@@ -52,6 +52,7 @@ body{
     border-radius: 17% ;
     background-color:var(--back-color-b);
     /* left: 50px; */
+    
 }
 .form{
     display: flex;
@@ -71,7 +72,9 @@ input{
     color:var(--back-color-e);
     margin: 10px;
     word-wrap: break-word;
-    
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 ul li {
     list-style: none;
@@ -89,23 +92,32 @@ ul {
      flex-flow: row wrap;
 }
 /* sélection de h1 pour stiliser  */
-h1{
-    font-size: 60px;
+/* Animation */
+@keyframes animTexte {
+    0% { color: var(--back-color-a); }
+    50% { color: var(--back-color-b); }
+    100% { color: var(--back-color-c); }
+}
+.animation {
+        animation: animTexte 3s infinite alternate; /* 3s pour la durée, infinite pour la répétition */
+    font-size: 35px;
     font-family:'Times New Roman';
     text-align: center left;
     /* position: relative; */
     padding: -20px;
     margin: 20px;
-    
-    
-    
+    /* display: flex;
+    flex-flow: row wrap;
+     */
+     /* position: absolute; */
 }
 
 img{
+    position: relative;
     width: 30%;
     height: 30%;
     left: 10%;
-    
+    /* transition: transform 0.8s ease; Transition douce pour l'animation */
 }
 /*  sélection du boutton pour styliser */
 .add-btn{

@@ -64,6 +64,7 @@ $(document).ready(function(){
             
             
             `);
+            
             addList.append(listLi);
             add.val("");
             dateList.val("");
